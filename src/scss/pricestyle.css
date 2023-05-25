@@ -14,6 +14,8 @@
 .main-swiper_price-size .title-price_name{
   margin-bottom: 16px;
   line-height: 18px;
+  font-family: 'TT Lakes', sans-serif;
+  font-size: 14px;
 }
 .title-price_order{
   width: 119px;
