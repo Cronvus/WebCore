@@ -694,6 +694,7 @@ label{
     line-height: 24px;
     letter-spacing: -0.2px;
 }
+@media(max-width: 1439px){
 .sidebar-hide{
     transform: translateX(-640px);
     animation: hide-sidebar 1s;
@@ -710,6 +711,7 @@ label{
     from {transform:translateX(-640px);}
     to {transform:translateX(0);}
 }
+}
 @media(min-width: 640px){
     .sideBar{
         width: 320px;
@@ -717,6 +719,7 @@ label{
 }
 @media(min-width: 1440px){
     .sideBar{
+        display: block;
         position: absolute;
         transform: translateX(0);
         height: 1024px;
