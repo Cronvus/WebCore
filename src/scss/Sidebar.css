@@ -6,6 +6,7 @@
 
 
 .sideBar{
+ display: none;   
  width: 100%;
  box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
  height: 100%;

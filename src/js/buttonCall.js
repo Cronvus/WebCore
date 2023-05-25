@@ -6,6 +6,7 @@ headerCall.addEventListener("click", clickCall);
 
 function clickCall(evt){
   evt.preventDefault();
+  modalCall.style.display = 'block'
   modalCall.classList.remove('modal-hide');
   modalCall.classList.add('modal-show');
   modalCall.style.position = 'fixed';

@@ -6,6 +6,7 @@ headerFeedback.addEventListener("click", clickFeedback);
 
 function clickFeedback(evt){
   evt.preventDefault();
+  modalFeedback.style.display = 'block'
   modalFeedback.classList.remove('modal-hide');
   modalFeedback.classList.add('modal-show');
   modalFeedback.style.position = 'fixed';

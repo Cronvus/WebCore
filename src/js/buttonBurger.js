@@ -3,6 +3,7 @@ import {buttonBurger, opacityMenu, sideBar} from "./variables"
 
 buttonBurger.addEventListener("click", function(evt){
   evt.preventDefault();
+  sideBar.style.display = "block"
   sideBar.classList.remove('sidebar-hide');
   sideBar.classList.add('sidebar-show');
   sideBar.style.position = 'fixed';
