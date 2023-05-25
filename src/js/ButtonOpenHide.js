@@ -1,9 +1,5 @@
-let buttonHideOpen = document.querySelector(".main__next-button");
-let partnerLaptop = document.querySelectorAll(".hide768px");
-let partnerPC = document.querySelectorAll(".hide1120px");
-let arrowRotate = document.getElementById("arrow-button");
-let textButton = document.querySelector('.next-button_text')
 
+import{partnerLaptop, partnerPC, buttonHideOpen, arrowRotate, textButton} from "./variables";
 
 
 buttonHideOpen.addEventListener("click", function(evt){

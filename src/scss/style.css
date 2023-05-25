@@ -8,6 +8,8 @@
 
 body{
     width: 100%;
+    overflow-x: hidden;
+    background-color: #F8F8F8;
 }
 
 .header{
@@ -16,27 +18,30 @@ body{
     justify-content: center;
     align-items: center;  
     border-bottom: #41F6D7 1px solid;
+    padding: 0 16px;
+    background-color: #FFFFFF;
 }
 
 .header__icon-background-logo{
-    width: 96.55px;
+    min-width: 96.55px;
     height: 50.81px;
     background-image: url(../img/Logo.png);
     background-position: center;
     background-repeat: no-repeat;
-    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .header__icon-background{
-    margin-left: 16px;
+    margin-right: 16px;
     max-height: 40px;
     border: 1px solid #FF3E79;
     background-color: #FF3E79;
     border-radius: 50%; 
+    min-width: 40px;
 }
 
 .header__icon-background.empty{
-    width: 0;
+    min-width: 0;
     padding: 0;
     background-color: #EAEAEA;
     height: 32px;
@@ -44,8 +49,8 @@ body{
     border-right: 1px solid #EAEAEA;
     border-left: 1px solid #EAEAEA;
     border-radius: 1px;
-    margin-left: 20px;
-    margin-right: 4px;
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 .main{
@@ -135,6 +140,10 @@ a{
     border-right: 2px solid #41F6D7;
     transform: rotate(45deg);
 }
+.main__next:hover{
+    opacity: 0.7;
+    color: #7E7E82;
+  }
 
 .main__next-button{
     display: flex;
@@ -146,22 +155,28 @@ a{
 
 .main__next{
     display: flex;
-    padding-left: 16px;
+    padding: 16px;
     line-height: 24px;
     align-items: center;
+    background-color: #F8F8F8;
 }
-/*
+.main__image{
+    margin: auto;
+}
+.main__image-foto{
+    width: 100%;
+}
 .icon-support{
     width: 40px;
     height: 40px;
-    background-image: url(image/support.png);
+    background-image: url(../img/support.png);
     background-position: center;
     background-repeat: no-repeat;
     margin-left: auto;
 }
 
 .icon-menu{
-    background-image: url(image/Main.png);
+    background-image: url(../img/Main.png);
     height: 40px;
     width: 40px;
     background-position: center;
@@ -169,41 +184,52 @@ a{
 }
 
 .icon-search{
-    background-image: url(image/Search.png);
+    background-image: url(../img/Search.png);
     height: 40px;
     width: 40px;
     background-position: center;
     background-repeat: no-repeat;
-    margin-right: 24px;
+    margin-right: 0px;
 }
 .icon-setting{
-    background-image: url(image/Setting.png);
+    background-image: url(../img/Setting.png);
     height: 40px;
     width: 40px;
     background-position: center;
     background-repeat: no-repeat;
 }
 .icon-message{
-    background-image: url(image/Message.png);
+    background-image: url(../img/Message.png);
     height: 40px;
     width: 40px;
     background-position: center;
     background-repeat: no-repeat;
 }
 .icon-profile{
-    background-image: url(image/Profile.png);
+    background-image: url(../img/Profile.png);
     height: 40px;
     width: 40px;
     background-position: center;
     background-repeat: no-repeat;
 }
-*/
+
 .laptop, .pc{
     display: none;
 }
+.header__icon-background:hover{
+    opacity: 0.7;
+    scale: 0.8;
+}
+.main__title-background:hover{
+    opacity: 0.7;
+    scale: 0.8;
+}
 @media (min-width: 768px){
-.laptop{
+.header .laptop{
  display: block;
+}
+.hide{
+    display: none;
 }
 .main__title-content{
     margin-right: 20px;
@@ -219,17 +245,22 @@ a{
 .main__image-foto{
     width: 360px;
     height: auto;
+    border-radius: 6px;
+}
+.header__icon-background.empty{
+    margin-left: 0;
 }
 .main__image{
-    margin-right:24px;
-    margin-left: auto;
+    margin:0 24px 0 auto;
     width: 360px;
-    height: 259.66px;
+    height: auto;
+    
 }
 .main__info{
     width: 312px;
     margin-left: 24px;
     margin-bottom: auto;
+    height: auto;
 }
 .main__next{
     padding-left: 0;
@@ -239,7 +270,7 @@ a{
     margin-bottom: auto;
 }
 }
-@media(min-width:1120px){
+@media(min-width:1440px){
 .header{
     display: none;
 }
@@ -296,5 +327,12 @@ a{
 .main__info{
     margin-left: 34px;
     margin-bottom: auto;
+}
+.transform1440px{
+    position: absolute;
+    left: 320px;
+}
+.icon-search.pc{
+    margin-right: 30px;
 }
 }

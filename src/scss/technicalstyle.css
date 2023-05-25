@@ -1,0 +1,31 @@
+.main-swiper_technical-size .main-swiper__slide-button{
+  height: 160px;
+  display: flex;
+  padding: 16px;
+  font-family: 'TT Lakes Medium', sans-serif;
+  font-size: 16px;
+}
+.main-swiper_technical-size .main-swiper__slide-button__partner{
+  top: 87px;
+}
+@media(min-width: 768px){
+  .technical-hide768px.hide{
+    display: none;
+  }
+  .technical-hide1120px.hide{
+    display: none;
+  }
+  .main-swiper_technical-size .main-swiper__slide-button{
+    width: 224px;
+  }
+}
+@media(min-width: 1110px){
+  .technical-hide768px.hide{
+    display: flex; 
+  }
+}
+@media(min-width: 1120px){
+.main-swiper_technical-size .main-swiper__slide-button{
+  width: 240px;
+}
+}

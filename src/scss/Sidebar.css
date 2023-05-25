@@ -5,13 +5,26 @@
 }
 
 
-body{
- width: 320px;
+.sideBar{
+ width: 100%;
  box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
- height: 1024px;
+ height: 100%;
  padding-left: 24px;
  position: absolute;
  left: 0;
+ top: 0;
+ background-color: #FFFFFF;
+ opacity: 1;
+ z-index: 1001;
+}
+.opacity{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1000;
+    display: none;
 }
 
 .sideBar-header{
@@ -29,7 +42,8 @@ body{
     margin-right: 16px;
 }
 .sideBar__icon-background:hover{
-    opacity: 0.5;
+    opacity: 0.7;
+    scale: 0.8;
 }
 .sideBar-header__icon-background-logo{
     margin-right: auto;
@@ -88,29 +102,28 @@ a{
 .sideBar-button__link.actived{
     color: #7E7E82;
 }
-/*
 .icon-support{
     width: 40px;
     height: 40px;
-    background-image: url(image/support.png);
+    background-image: url(../img/support.png);
     background-position: center;
     background-repeat: no-repeat;
     margin-left: auto;
 }
 .icon-message{
-    background-image: url(image/Message.png);
+    background-image: url(../img/Message.png);
     height: 40px;
     width: 40px;
     background-position: center;
     background-repeat: no-repeat;
 }
 .icon-profile{
-    background-image: url(image/Profile.png);
+    background-image: url(../img/Profile.png);
     height: 40px;
     width: 40px;
     background-position: center;
     background-repeat: no-repeat;
-}*/
+}
 .sideBar-footer{
     position: absolute;
     bottom: 24px;
@@ -149,4 +162,44 @@ label{
     padding-left: 7px;
     line-height: 24px;
     letter-spacing: -0.2px;
+}
+.sidebar-hide{
+    transform: translateX(-640px);
+    animation: hide-sidebar 1s;
+}
+    @keyframes hide-sidebar {
+    from {transform:translateX(0);}
+    to {transform:translateX(-640px);}
+}
+.sidebar-show{
+    transform: translateX(0);
+    animation: open-sidebar 1s;
+}
+    @keyframes open-sidebar {
+    from {transform:translateX(-640px);}
+    to {transform:translateX(0);}
+}
+@media(min-width: 640px){
+    .sideBar{
+        width: 320px;
+    }
+}
+@media(min-width: 1440px){
+    .sideBar{
+        position: absolute;
+        transform: translateX(0);
+        height: 1024px;
+        box-shadow: none;
+    }
+    .opacity{
+        width: 320px;
+        height: 100%;
+        position: absolute;
+        background-color: #FFFFFF;
+        opacity: 1 !important;
+        display: block !important;
+    }
+    .sideBar-header__icon-cross{
+        display: none;
+    }
 }

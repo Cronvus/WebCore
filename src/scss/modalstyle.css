@@ -1,0 +1,123 @@
+.modal{
+  width: 100%;
+  height: 100%;
+  padding: 24px 16px;
+  background-color: #FFFFFF;
+  min-height: 676px;
+  font-family: 'TT Lakes', sans-serif;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1005;
+  box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
+}
+.modal .sideBar__icon-background{
+  margin-bottom: 40px;
+}
+.modal-title{
+  margin-bottom: 24px;
+  font-size: 24px;
+  letter-spacing: -0.6px;
+}
+.modal-input{
+  width: 100%;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  resize: none;
+  font-family: 'TT Lakes', sans-serif;
+}
+.modal-button{
+  position: relative;
+  width: 136px;
+  height: 32px;
+  padding: 6px 8px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 0;
+}
+.modal-button .main-swiper__slide-button__partner-next{
+  border-color: #FFFFFF;
+  bottom: 8px;
+  right: 5px;
+}
+.modal-button .main-swiper__slide-button__partner{
+  margin: 0;
+  width: 27px;
+  height: 24px;
+  position: relative;
+}
+.modal-button-text{
+  margin-left: auto;
+  
+  font-size: 12px;
+  font-weight: bold;
+}
+.modal-title_text{
+  
+  color: #7E7E82;
+  font-size: 14px;
+  line-height: 16px;
+}
+.modal-title_text_color{
+  color: #FF3E79;
+}
+.modal-title_text_color:hover{
+  text-decoration-line: underline;
+}
+textarea[type='text']{
+  min-height: 118px;
+}
+.modal .sideBar-main_empty{
+  width: 3px;
+  height: 40px;
+  top: 96px;
+}
+.opacity-modal{
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 1004;
+  display: none;
+}
+.modal-hide{
+  transform: translateX(640px);
+  animation: hide-modal 1s;
+}
+  @keyframes hide-modal {
+  from {transform:translateX(0);}
+  to {transform:translateX(640px);}
+}
+.modal-show{
+  transform: translateX(0);
+  animation: open-modal 1s;
+}
+  @keyframes open-modal {
+  from {transform:translateX(640px);}
+  to {transform:translateX(0);}
+}
+@media(min-width: 640px){
+  .modal{
+    width: 320px;
+  }
+}
+@media(min-width: 1440px){
+  .modal .sideBar__icon-background{
+    display: block;
+    position: absolute;
+    right: 458px;
+  }
+  .modal{
+  width: 440px;
+  padding: 40px 32px;
+  }
+  .modal .sideBar-main_empty{
+    top: 32px;
+    transform: translateX(-1.5px);
+    border-radius: 2px;
+  }
+
+}

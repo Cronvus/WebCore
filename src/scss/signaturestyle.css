@@ -1,0 +1,35 @@
+.signature-price{
+  margin: 0;
+  padding: 0 16px 0 16px;
+  background-color: #F8F8F8;
+  font-family: 'TT Lakes', sans-serif;
+}
+.signature-price .signature-price_text{
+  font-size: 14px;
+  max-width: 421px;
+  padding-bottom: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.sugnature-price__commercial-offer .commercial-offer_text{
+  font-family: 'TT Lakes Medium', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  margin-bottom: 40px;
+}
+.sugnature-price__commercial-offer .main-swiper__slide-button__partner-next{
+  background-color: #F8F8F8;
+  bottom: 16px;
+  right: 10px;
+}
+@media(min-width: 768px){
+.signature-price{
+  padding: 0 24px 0 24px;
+} 
+}
+@media(min-width: 1120px){
+  .signature-price{
+    padding: 0 32px 0 32px;
+  } 
+  }

@@ -1,3 +1,9 @@
 import '../scss/style.scss'
-
-console.log('Works!')
+import './variables'
+import './script'
+import './ButtonOpenHide'
+import './technicaButton'
+import './buttonBurger'
+import './buttonCross'
+import './buttonCall';
+import './buttonFeedback';
