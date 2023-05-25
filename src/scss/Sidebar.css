@@ -126,8 +126,8 @@ a{
     background-repeat: no-repeat;
 }
 .sideBar-footer{
-    position: relative;
-    top: 24%;
+    position: absolute;
+    bottom: 24px;
 }
 .sideBar-footer__button{
     padding-bottom: 16px;
@@ -140,7 +140,7 @@ a{
     letter-spacing: -0.2px;
 }
 .sideBar-footer__phone{
-    padding-bottom: 40px;
+    padding-bottom: 8px;
     font-family: 'TT Lakes', sans-serif;
     font-weight: bold;
     line-height: 32px;
@@ -160,7 +160,7 @@ input[type="radio"]{
 }
 label{
     font-family: 'TT Lakes', sans-serif;
-    padding-left: 7px;
+    padding-right: 7px;
     line-height: 24px;
     letter-spacing: -0.2px;
 }
@@ -193,7 +193,11 @@ label{
         top: 116px;
     }
     .sideBar-footer{
+        position: relative;
         top: 20%;
+    }
+    .sideBar-footer__phone{
+        padding-bottom: 40px;
     }
 }
 @media(min-width: 1440px){
