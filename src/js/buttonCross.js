@@ -20,5 +20,8 @@ function clickCross(evt){
   modalFeedback.style.position = 'absolute';
   opacityModal.style.display = 'none';
   opacityMenu.style.display = 'none';
+  modalCall.style.display = 'none';
+  modalFeedback.style.display = 'none';
+  sideBar.style.display = 'none';
 
 }
