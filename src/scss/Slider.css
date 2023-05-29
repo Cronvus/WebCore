@@ -57,14 +57,26 @@
   margin-left: auto;
   width: 40px;
   height: 40px;
+  background-color: #FFFFFF;
 }
 .main-swiper__slide-button__partner-next{
-  position: relative;
+  position: absolute;
   width: 8px;
   height: 8px;
   border-right: 2px solid #FF3E79;
   border-bottom: 2px solid #FF3E79;
   transform: translate(14px, 14px) rotate(-45deg);
+  background-color: #FFFFFF;
+  right: 47px;
+  top: 18px;
+}
+.image-partner{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0 auto 16px;
 }
 
 .swiper-pagination{

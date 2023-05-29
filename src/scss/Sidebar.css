@@ -211,7 +211,7 @@ label{
     .opacity{
         width: 320px;
         height: 100%;
-        position: absolute;
+        position: fixed;
         background-color: #FFFFFF;
         opacity: 1 !important;
         display: block !important;

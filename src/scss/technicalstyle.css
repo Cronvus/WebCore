@@ -8,6 +8,9 @@
 .main-swiper_technical-size .main-swiper__slide-button__partner{
   top: 87px;
 }
+.main-swiper_technical-size .main-swiper__slide-button__partner-next{
+  top: 105px;
+}
 @media(min-width: 768px){
   .technical-hide768px.hide{
     display: none;

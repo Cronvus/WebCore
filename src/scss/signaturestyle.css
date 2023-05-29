@@ -20,8 +20,9 @@
 }
 .sugnature-price__commercial-offer .main-swiper__slide-button__partner-next{
   background-color: #F8F8F8;
-  bottom: 16px;
+  top: -16px;
   right: 10px;
+  position: relative;
 }
 @media(min-width: 768px){
 .signature-price{
