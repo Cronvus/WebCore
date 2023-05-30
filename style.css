@@ -491,10 +491,13 @@ a{
     line-height: 24px;
     height: 56px;
   }
+  em{
+    font-style: normal;
+  }
   .main__next-button_slider{
     display: flex; 
     align-items: center;
-    font-family: 'TT Lakes', sans-serif;
+    font-family: 'TT Lakes Medium', sans-serif;
     font-size: 16px;
     margin-bottom: 16px;
     background-color: #F8F8F8;
@@ -755,10 +758,7 @@ label{
     .sideBar-main_empty{
         top: 116px;
     }
-    .sideBar-footer{
-        position: relative;
-        top: 20%;
-    }
+
     .sideBar-footer__phone{
         padding-bottom: 40px;
     }
