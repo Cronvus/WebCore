@@ -103,6 +103,10 @@
   .swiper{
     padding: 16px 24px 24px 24px;
   }
+  .first-swiper{
+    margin: 0 auto;
+    width: 768px;
+  }
   .swiper-pagination{
    display: none;
   }
@@ -168,11 +172,6 @@
     display: none;
   } 
 }
-@media (min-width: 968px) {
-  .main-swiper__slide-button:nth-child(3n){
-    margin-right: 24px;
-  }
-}
 @media (min-width: 1138px){
   .main-swiper__slide-button:nth-child(4n){
     margin-right: 0;
@@ -181,6 +180,9 @@
 @media (min-width: 1120px){
   .swiper{
     padding: 16px 32px 24px 32px;
+  }
+  .first-swiper{
+    width: 1120px;
   }
   .main-swiper__slide-button{
     width: 240px;

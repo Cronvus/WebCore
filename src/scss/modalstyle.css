@@ -40,14 +40,16 @@
 }
 .modal-button .main-swiper__slide-button__partner-next{
   border-color: #FFFFFF;
-  bottom: 8px;
-  right: 5px;
+  top: -2px;
+  right: 33px;
+  background-color: #FF3E79;
 }
 .modal-button .main-swiper__slide-button__partner{
   margin: 0;
   width: 27px;
   height: 24px;
   position: relative;
+  background-color: #FF3E79;
 }
 .modal-button-text{
   margin-left: auto;

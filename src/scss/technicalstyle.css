@@ -18,6 +18,10 @@
   .technical-hide1120px.hide{
     display: none;
   }
+  .second-swiper{
+    margin: 0 auto;
+    width: 768px;
+  }
   .main-swiper_technical-size .main-swiper__slide-button{
     width: 224px;
   }
@@ -30,5 +34,8 @@
 @media(min-width: 1120px){
 .main-swiper_technical-size .main-swiper__slide-button{
   width: 240px;
+}
+.second-swiper{
+  width: 1120px;
 }
 }
