@@ -192,10 +192,7 @@ label{
     .sideBar-main_empty{
         top: 116px;
     }
-    .sideBar-footer{
-        position: relative;
-        top: 20%;
-    }
+
     .sideBar-footer__phone{
         padding-bottom: 40px;
     }
