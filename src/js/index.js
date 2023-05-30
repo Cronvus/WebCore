@@ -7,6 +7,7 @@ import './buttonBurger'
 import './buttonCross'
 import './buttonCall';
 import './buttonFeedback';
+import './opacityButton';
 import acerPng from '../img/acer.png';
 import applePng from '../img/apple.png';
 import boschPng from '../img/bosch.png';
