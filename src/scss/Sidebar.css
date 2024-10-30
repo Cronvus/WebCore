@@ -5,18 +5,21 @@
 }
 
 
-.sideBar{
- display: none;   
+.modal-burger{
+ display: none;
  width: 100%;
  box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
  height: 100%;
- padding-left: 24px;
- position: absolute;
- left: 0;
- top: 0;
- background-color: #FFFFFF;
- opacity: 1;
- z-index: 1001;
+}
+.body__modal-burger{
+  padding: 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #FFFFFF;
+  opacity: 1;
+  z-index: 1001;
+
 }
 .opacity{
     width: 100%;
@@ -28,58 +31,34 @@
     display: none;
 }
 
-.sideBar-header{
+.modal-body__modal-header{
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 24px;  
+
 }
-.sideBar__icon-background{
-    max-height: 40px;
-    border: 1px solid #FF3E79;
-    background-color: #FF3E79;
-    border-radius: 50%;
-    margin-right: 16px;
+
+.logo_position{
+  margin-left: 16px;
+  margin-right: auto;
 }
-.sideBar__icon-background:hover{
-    opacity: 0.7;
-    scale: 0.8;
-}
-.sideBar-header__icon-background-logo{
-    margin-right: auto;
-}
-.header__icon-background-logo{
-    width: 96.55px;
-    height: 50.81px;
-    background-image: url(../img/Logo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.sideBar-header__icon-search{
-    width: 40px;
-    height: 40px;
+.btn_modalSearch{
     background-image: url(../img/sidebar_search.png);
-    background-position: center;
-    background-repeat: no-repeat;
     margin-left: auto;
-    margin-right: 24px;
 }
-.sideBar-header__icon-cross{
-    width: 40px;
-    height: 40px;
+.btn-cross{
     background-image: url(../img/cross.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    margin-left: 0;
 }
 a{
     text-decoration: none;
     color: #1B1C21;
 }
-.sideBar-main{
-    padding-top: 24px;
+.modal-burger__modal-navigation{
+    padding-top: 34px;
 }
-.sideBar-main_empty{
+.modal-emptyDiv{
     width: 4px;
     height: 32px;
     background-color: #41F6D7;
@@ -87,60 +66,42 @@ a{
     border-bottom-right-radius: 5px;
     position: absolute;
     left: 0;
-    top: 92px;
+    top: 118px;
 }
-.sideBar-main__sideBar-button{
+.modal-burger__modal-button-link{
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
 }
-.sideBar-button__link{
+.modal-burger__link{
    padding-bottom: 32px;
    font-size: 16px;
    font-family: 'TT Lakes', sans-serif;
    font-weight: 600;
 }
-.sideBar-button__link.actived{
+.modal-burger__link.actived{
     color: #7E7E82;
 }
-.icon-support{
-    width: 40px;
-    height: 40px;
-    background-image: url(../img/support.png);
-    background-position: center;
-    background-repeat: no-repeat;
+.modal-burger__button .btn-support{
     margin-left: auto;
 }
-.icon-message{
-    background-image: url(../img/Message.png);
-    height: 40px;
-    width: 40px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.icon-profile{
-    background-image: url(../img/Profile.png);
-    height: 40px;
-    width: 40px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.sideBar-footer{
+
+.modal-burger__modal-footer{
     position: absolute;
-    bottom: 2vh;
+    bottom: 24px;
 }
-.sideBar-footer__button{
+.modal-burger__button{
     padding-bottom: 16px;
 }
-.sideBar-footer__email{
+.modal-burger__email{
     padding-bottom: 12px;
     font-family: 'TT Lakes', sans-serif;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
 }
-.sideBar-footer__phone{
-    padding-bottom: 8px;
+.modal-burger__phone{
+    padding-bottom: 40px;
     font-family: 'TT Lakes', sans-serif;
     font-weight: bold;
     line-height: 32px;
@@ -183,22 +144,22 @@ label{
 }
 }
 @media(min-width: 640px){
-    .sideBar{
+    .modal-burger{
         width: 320px;
     }
-    .sideBar-main{
+    .modal-burger__modal-navigation{
         padding-top: 50px;
     }
-    .sideBar-main_empty{
-        top: 116px;
+    .modal-emptyDiv{
+        top: 138px;
     }
 
-    .sideBar-footer__phone{
+    .modal-burger__phone{
         padding-bottom: 40px;
     }
 }
 @media(min-width: 1440px){
-    .sideBar{
+    .modal-burger{
         display: block !important;
         position: absolute;
         transform: translateX(0);
@@ -213,7 +174,7 @@ label{
         opacity: 1 !important;
         display: block !important;
     }
-    .sideBar-header__icon-cross{
+    .btn-cross{
         display: none;
     }
 }

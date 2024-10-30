@@ -12,7 +12,7 @@
   z-index: 1005;
   box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
 }
-.modal .sideBar__icon-background{
+.modal .btn{
   margin-bottom: 40px;
 }
 .modal-title{
@@ -53,12 +53,12 @@
 }
 .modal-button-text{
   margin-left: auto;
-  
+
   font-size: 12px;
   font-weight: bold;
 }
 .modal-title_text{
-  
+
   color: #7E7E82;
   font-size: 14px;
   line-height: 16px;
@@ -72,7 +72,7 @@
 textarea[type='text']{
   min-height: 118px;
 }
-.modal .sideBar-main_empty{
+.modal .modal-emptyDiv{
   width: 3px;
   height: 40px;
   top: 96px;
@@ -108,7 +108,7 @@ textarea[type='text']{
   }
 }
 @media(min-width: 1440px){
-  .modal .sideBar__icon-background{
+  .modal .btn{
     display: block;
     position: absolute;
     right: 458px;
@@ -117,7 +117,7 @@ textarea[type='text']{
   width: 440px;
   padding: 40px 32px;
   }
-  .modal .sideBar-main_empty{
+  .modal .modal-emptyDiv{
     top: 32px;
     transform: translateX(-1.5px);
     border-radius: 2px;
